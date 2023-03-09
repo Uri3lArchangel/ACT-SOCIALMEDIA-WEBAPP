@@ -1,0 +1,35 @@
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../components/Frontend/Images/Auth/background.png);
+    background-size: 120% 100%;
+    background-position: center;
+}
+.name{
+    font-family: wonome;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.form{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    background-image: linear-gradient(to bottom right,#7823f688,0.0001%,#1d1827cc,97%,#ec19f888);
+    padding: 0.2em;
+    box-shadow: 1px 1px 2px inset #7823f688,-1px -1px 2px inset #ec19f888;
+}
+.signin_btn{
+    color: white;
+    background-image: linear-gradient(to right,#a85151,purple,rgb(116, 36, 181));
+    font-size: 0.8rem;
+    width: 80%;
+    display: block;
+    margin-bottom: 0.4em;
+    margin: auto;
+    padding: 0.4em 0;
+    border-radius: 1em;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px black;
+}
