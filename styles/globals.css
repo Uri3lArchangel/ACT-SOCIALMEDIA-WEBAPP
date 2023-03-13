@@ -8,9 +8,59 @@
 }
 :root{
   font-size: 8px;
+  --color1:#73a7d9;
 }
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+@media screen and (min-width:320px) {
+  .appleAuth_btn,.googleAuth_btn{
+  width: 60%;
+  height: 25px;
+  font-size: 1.3rem;
+}.textAuth_inp,.passAuth_inp{
+  height: 30px;
+  font-size: 1.5rem;
+}
+.genderFemaleAuth_btn,.genderMaleAuth_btn{
+  width: 35%;
+  height: 20px;
+}.termsAndAgreementContainer{
+  width: 60%;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}.signinAuth_btn{
+height: 25px;
+font-size: 1.3rem;
+}
+}
+
+
+@media screen and (min-width:670px) {
+  .appleAuth_btn,.googleAuth_btn{
+    width: 60%;
+    height: 40px;
+    font-size: 2.2rem;
+    margin-top: 1em;
+    margin-bottom:1em;
+  }
+  .textAuth_inp,.passAuth_inp{
+    height: 40px;
+    font-size: 2rem;
+    margin-top: 1.7em;
+    margin-bottom: 1.7em;
+  }
+  .signinAuth_btn{
+    height: 30px;
+    margin-top: 1.7em;
+    margin-bottom: 1.7em;
+    font-size: 1.7rem;
+  }.appleAuth_svg,.googleAuth_svg{
+    width: 20px;
+    margin-right: 0.6em;
+  }
 }

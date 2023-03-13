@@ -1,4 +1,5 @@
 import Login from '../components/Frontend/pages/Auth/Login'
+import SignUp from '../components/Frontend/pages/Auth/SignUp'
 import st from '../styles/Auth.module.css'
 
 
@@ -7,9 +8,8 @@ function Index(){
 
 return(
   <div className={st.background}>
-  <div className={st.form}>
    <Login />
-  </div>
+   <SignUp />
   </div>
 
 )

@@ -1,20 +1,25 @@
 import React from 'react'
 import st from '../../../../styles/Auth.module.css'
 import AButton from '../../src/Auth/AppleButton'
+import Text_inp from '../../src/Auth/Text_inp'
 import GButton from '../../src/Auth/GoogleButton'
+import Password_inp from '../../src/Auth/Password_inp'
+import SignIn_btn from '../../src/Auth/SignIn_btn'
+import SignUp_btn from '../../src/Auth/SignUp_btn'
 
 
 function Login() {
   return (
-    <form action="">
+    <div id='loginContainer' className={st.form_Container}>
+ 
     <h1 className={st.name}>AJAX-CORE-TECHS</h1>
    <GButton />
     <AButton />
-    <input type="text" className='w-11/12 block mx-auto text-center outline-none rounded-lg border border-purple-200/50 bg-transparent text-white text-xs h-8 placeholder:text-white my-4' placeholder='Email Address or Phone Number' />
-    <input type="password" className='w-11/12 block mx-auto text-center outline-none rounded-lg border border-purple-200/50 bg-transparent text-white text-xs h-8 placeholder:text-white my-4' placeholder='Password' />
-    <button className={st.signin_btn}>Sign In</button>
-    <button className='text-white text-sm bg-gray-800 w-6/12 py-1 mx-auto my-6 block rounded-full shadow-md shadow-black'>Sign Up</button>
-  </form>
+    <Text_inp desc={'Email Address or Phone Number'} />
+    <Password_inp desc='password' />
+    <SignIn_btn desc={'Sign In'} />
+    <SignUp_btn desc={'Sign Up'} />
+  </div>
   )
 }
 
