@@ -19,7 +19,7 @@
 @media screen and (min-width:320px) {
   .appleAuth_btn,.googleAuth_btn{
   width: 60%;
-  height: 25px;
+    padding: 0.9em 0;
   font-size: 1.3rem;
 }.textAuth_inp,.passAuth_inp{
   height: 30px;
