@@ -21,24 +21,35 @@
   width: 60%;
   font-size: 1.3rem;
 }.textAuth_inp,.passAuth_inp{
-  height: 30px;
+  height: 35px;
   font-size: 1.5rem;
 }
 .genderFemaleAuth_btn,.genderMaleAuth_btn{
   width: 35%;
-  height: 20px;
+  height: 35px;
+  font-size: 1.4rem;
 }.termsAndAgreementContainer{
-  width: 60%;
+  width: 75%;
   margin: auto;
   margin-top: 2em;
   margin-bottom: 2em;
-}.signinAuth_btn{
+
+}.termsAndAgreementContainer label,.termsAndAgreementContainer a,.swtichFormPrompt,.genderSelectPrompt{
+font-size: 1.4rem;
+line-height: 14px;
+}
+
+.signinAuth_btn{
 height: 25px;
 font-size: 1.3rem;
 }
 .appleIcon,.googleIcon{
   width: 17px;
 }
+.instruction{
+  font-size: 1.3rem;
+}
+
 }
 
 

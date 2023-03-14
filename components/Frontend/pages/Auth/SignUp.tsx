@@ -12,7 +12,7 @@ function SignUp() {
   return (
     <div id="signupContainer" className={st.form_signup_Container}>
       <h1 className={st.name}>AJAX-CORE-TECHS</h1>
-      <p className="text-xs text-white text-center">
+      <p className="text-xs text-white text-center instruction">
         Please fill in the form below with the appropriate values
       </p>
       <Text_inp desc={"First Name"} />
@@ -20,7 +20,7 @@ function SignUp() {
       <Text_inp desc={"Username "} />
       <Password_inp desc="Password" />
       <Password_inp desc="Confirm Password" />
-      <p className="text-sm text-center text-white">Gender</p>
+      <p className="text-sm text-center text-white genderSelectPrompt">Gender</p>
       <div className="flex justify-between text-white my-4">
         <button
           className="bg-blue-400/20 px-4 border border-blue-400/20 genderMaleAuth_btn"
@@ -44,17 +44,17 @@ function SignUp() {
         </button>
       </div>
       <div className="flex my-5 p-2 justify-between termsAndAgreementContainer">
-        <input type="checkbox" className="w-5" />
-        <p className="text-xs text-white text-right ">
-          I consent to the following terms and conditions <br />{" "}
+        <input type="checkbox" id="check" className="w-5" />
+        <label htmlFor={'check'} className="text-xs text-white text-right ">
+          I consent to the following terms and conditions <br />
           <Link href="#" className="underline hover:text-blue-300">
             Terms and Conditions
           </Link>
-        </p>
+        </label>
       </div>
       <SignIn_btn desc={"Sign Up"} />
-      <p className="text-xs text-center mt-4 text-white">
-        If you already have an account then{" "}
+      <p className="text-xs text-center mt-4 text-white swtichFormPrompt">
+        If you already have an account then
       </p>
       <SignUp_btn desc={"Sign In"} />
     </div>

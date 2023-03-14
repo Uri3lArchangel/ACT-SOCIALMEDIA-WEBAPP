@@ -44,6 +44,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
     background-image: url(../components/Frontend/Images/Auth/background.png);
     background-size: 120% 100%;
     background-position: center;
@@ -67,6 +68,7 @@
 
 .form_signup_Container{
     position: absolute;
+    border-radius: 20px;
     width: 100%;
     display: none;
     transition: left 1.5s linear;
@@ -126,7 +128,7 @@
 }
 @media screen and (min-height:450px) {
     .form_signup_Container{
-        top: 16%
+        top: 13%
     }
 }
 
@@ -144,4 +146,28 @@
         width: 60%;
         font-size:2.1rem;
     }
+}
+@media screen and (min-width:860px) {
+    .form_signup_Container{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .form_Container{
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+@media screen and (min-width:1240px) {
+    .form_signup_Container{
+        width:30%;
+        margin-left: 35%;
+    }
+    .form_Container{
+        width: 30%;
+        margin-left: 35%;
+    }
+    .background{
+        background-size: 100% 120%;
+    }
+
 }
