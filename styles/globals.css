@@ -9,6 +9,10 @@
 :root{
   font-size: 8px;
   --color1:#73a7d9;
+  --color2:#bc81ec;
+  --color2dark:#7a28be;
+  --gradient1:linear-gradient(to right,var(--color2),50%,cyan,transparent);
+  --gradient1topdown:linear-gradient(to bottom,var(--color2dark),50%,cyan,transparent);
 }
 *{
   padding: 0;
